@@ -8,7 +8,7 @@ export function todoAdd(name, description) {
 }
 
 export function todoAddAll(todo_list) {
-	return {  type: TODO_ADD_ALL, todo_list};
+	return {  type: TODO_ADD_ALL, todo_list}; 
 }
 
 export function todoDelete(_id) {

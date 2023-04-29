@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'; 
 import { todoDelete, todoUpdateState } from './actions';
 
 class ToDoTask extends React.Component {
