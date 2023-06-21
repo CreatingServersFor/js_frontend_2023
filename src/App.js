@@ -1,6 +1,6 @@
 import React from 'react';
 import ToDoTaskAdd from './ToDoTaskAdd';
-import ToDoList from './ToDoList'; 
+import ToDoList from './ToDoList';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { todoAddAll } from './actions'
 import { Provider, connect } from 'react-redux';

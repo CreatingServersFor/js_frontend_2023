@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'; 
+import { combineReducers } from 'redux';
 
 import { TODO_ADD, TODO_ADD_ALL, TODO_DELETE, TODO_UPDATE_STATE } from './actions';
 
