@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { connect } from 'redact-redux';
 import { NavLink } from 'react-router-dom';
+import { todoAdd } from './actions'
 
 class ToDoTaskAddInner extends React.Component {
   constructor(props) { 
@@ -47,6 +49,7 @@ class ToDoTaskAddInner extends React.Component {
              }).then((res) => {
                  return res.json();
              }).then((data) => {
+		this.props.dispatch(todoAdd(data._id, data.name, data.description));
 		this.props.history('/');
 		window.location.reload();
       });
@@ -92,4 +95,4 @@ const ToDoTaskAdd = (props) => {
 	
 }
 
-export default ToDoTaskAdd;
+export default connect() (ToDoTaskAdd);
