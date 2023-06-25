@@ -51,7 +51,6 @@ class ToDoTaskAddInner extends React.Component {
              }).then((data) => {
 		this.props.dispatch(todoAdd(data._id, data.name, data.description));
 		this.props.history('/');
-		window.location.reload();
       });
   }
   
